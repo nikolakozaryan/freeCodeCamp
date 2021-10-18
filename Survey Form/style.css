@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(93, 65, 192, 0.7), rgba(150, 120, 255, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    color: whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+header :nth-child(n) {
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+header :last-child {
+    font-style: italic;
+}
+
+#container {
+    max-width: 750px;
+    margin: 60px auto 0 auto;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+.container>p {
+    margin: 20px 0;
+}
+
+#survey-form {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 40px;
+    background: rgba(27, 27, 50, 0.8);
+}
+
+#survey-form {
+    font-size: 1.125rem;
+}
+
+.text-input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.input-container {
+    margin: 30px 0;
+    display: block;
+}
+
+.input-container div {
+    margin-bottom: 10px;
+}
+
+#submit {
+    color: white;
+    width: 100%;
+    padding: 15px;
+    background: #61c059;
+}
+
+.checker {
+    display: flex;
+    flex-direction: column;
+}
+
+.checker :nth-child(n+1) {
+
+    margin-top: 7px;
+}
+
+.checker :nth-child(2) {
+    margin: 0;
+}
+
+.additional-info {
+    line-height: 1rem;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 767px) {
+    #survey-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
