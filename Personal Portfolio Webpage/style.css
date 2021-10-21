@@ -1,0 +1,265 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--main-white);
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--main-red);
+}
+
+h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#welcome {
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#projects {
+    background: var(--main-blue);
+}
+
+#contacts, footer {
+    background: var(--main-gray);
+}
+
+#navbar {
+    width: 350px;
+    height: 100%;
+}
+
+#navbar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#navbar li {
+    height: 100%;
+    width: calc(100%/3);
+    list-style: none;
+}
+
+#navbar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    padding: 23px 0;
+    color: white;
+}
+
+#navbar a:hover {
+    background: var(--main-blue);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.big-header {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#welcome-section__addition {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    color: var(--main-red);
+}
+
+#contacts {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts-section__addition {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+footer {
+    font-size: 1.05rem;
+    font-weight: 300;
+    height: 100px;
+    border-top: 4px solid var(--main-red);
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#contacts-links {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.links-item {
+    font-size: 1.5rem;
+    padding: 20px;
+    transition: padding .3s;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.links-item:hover {
+    padding: 30px 20px 10px 20px;
+}
+
+#projects {
+    padding: 70px 0;
+    text-align: center;
+}
+
+#projects h2 {
+    display: inline;
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid var(--main-white);
+}
+
+#projects-container {
+    margin: 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+#profile-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: var(--main-gray);
+    transition: .5s;
+}
+
+#profile-link:hover {
+    background: var(--main-red);
+}
+
+.project-item img {
+    margin: 0 0 0 -40%;
+    height: calc(100% - 4rem);
+    width: 180%;
+    object-fit: cover;
+}
+
+.project-item {
+    text-decoration: none;
+    border-radius: 5px;
+    background: var(--main-gray);
+    overflow: hidden;
+}
+
+.project-item p {
+    height: 4rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.project-item .orange-hover-apear {
+    color: var(--main-gray);
+    transition: 0.5s;
+}
+
+.project-item:hover .orange-hover-apear {
+    color: #ff7b00;
+}
+
+.footer-content {
+    margin: 0 20px;
+}
+
+@media (max-width: 730px) {
+    #projects-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }    
+}
+
+@media (max-width: 460px) {
+    #footer-container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-content {
+        text-align: center;
+        margin: 15px;
+    }
+    #navbar {
+        width: 320px;
+    }
+    
+    #navbar ul {
+        margin-right: 0;
+    }
+
+    .links-item {
+        font-size: 1.3rem;
+    }
+}

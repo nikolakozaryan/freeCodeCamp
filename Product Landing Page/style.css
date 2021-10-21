@@ -45,18 +45,18 @@ li {
     height: auto;
 }
 
-#header-nav {
+#nav-bar {
     width: 40vw;
 }
 
-#header-nav ul {
+#nav-bar ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
 }
 
-#header-nav li {
+#nav-bar li {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -226,7 +226,7 @@ i {
 }
 
 @media (max-width: 680px) {
-    #header-nav ul{
+    #nav-bar ul{
         flex-direction: column;
         margin-bottom: 20px;
     }
@@ -237,11 +237,11 @@ i {
         flex-direction: column;
     }
     
-    #header-nav ul {
+    #nav-bar ul {
         flex-direction: row;
     }
 
-    #header-logo, #header-nav {
+    #header-logo, #nav-bar {
         width: 100%;
     }
 
